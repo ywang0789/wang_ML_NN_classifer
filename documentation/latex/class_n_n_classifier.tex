@@ -1,0 +1,139 @@
+\hypertarget{class_n_n_classifier}{}\doxysection{NNClassifier Class Reference}
+\label{class_n_n_classifier}\index{NNClassifier@{NNClassifier}}
+
+
+A class that implements the nearest neighbor classification algorithm.  
+
+
+
+
+{\ttfamily \#include $<$NNClassifier.\+h$>$}
+
+Inheritance diagram for NNClassifier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_n_n_classifier}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_n_n_classifier_a3f3017b7912a793a5f592e26306b1cc4}{train}} (const string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Trains the classifier using the data in the given file. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_n_n_classifier_afe45825f6dfc06564521d172e2ba5f6a}{classify}} (double x, double y, double z)
+\begin{DoxyCompactList}\small\item\em Classifies the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} with the given components using the nearest neighbor classification algorithm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_n_classifier_a3460020cef2297fd853300fb71323640}{classify}} (const string \&i\+File\+Name, const string \&o\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Classifies the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} objects in the input file using the nearest neighbor classification algorithm and writes the results to the output file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_classifier_a41bfc667929967e5dccac1cddcf0056b}{train}} (const string \&file\+Name)=0
+\begin{DoxyCompactList}\small\item\em Trains the classifier using the data in the given file. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_classifier_a8f3baa9dfd3601a58780c82f7ed31df3}{classify}} (double x, double y, double z)=0
+\begin{DoxyCompactList}\small\item\em Classifies the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} with the given components using the classifier. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_classifier_afce93e5ec1f4262ec10b929a35bb37dc}{classify}} (const string \&i\+File\+Name, const string \&o\+File\+Name)=0
+\begin{DoxyCompactList}\small\item\em Classifies the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} objects in the input file using the classifier and writes the results to the output file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_classifier}{Classifier}}}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} $>$ \mbox{\hyperlink{class_classifier_ace628cdd46a14bd273864d0015de88fb}{data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that implements the nearest neighbor classification algorithm. 
+
+This class is fully functional. You can \mbox{\hyperlink{class_n_n_classifier_a3f3017b7912a793a5f592e26306b1cc4}{train()}} and classify()! 
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8h_source_l00021}{21}} of file \mbox{\hyperlink{_n_n_classifier_8h_source}{NNClassifier.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_n_n_classifier_a3460020cef2297fd853300fb71323640}\label{class_n_n_classifier_a3460020cef2297fd853300fb71323640}} 
+\index{NNClassifier@{NNClassifier}!classify@{classify}}
+\index{classify@{classify}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{classify()}{classify()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void NNClassifier\+::classify (\begin{DoxyParamCaption}\item[{const string \&}]{i\+File\+Name,  }\item[{const string \&}]{o\+File\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Classifies the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} objects in the input file using the nearest neighbor classification algorithm and writes the results to the output file. 
+
+This function reads the input file and classifies each \mbox{\hyperlink{class_data_vector}{Data\+Vector}} and stores the result in a \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} vector. Then, each \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} is printed into the output file with the parsed label string 
+\begin{DoxyParams}{Parameters}
+{\em i\+File\+Name} & The name of the input file. \\
+\hline
+{\em o\+File\+Name} & The name of the output file. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_classifier_afce93e5ec1f4262ec10b929a35bb37dc}{Classifier}}.
+
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00055}{55}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_afe45825f6dfc06564521d172e2ba5f6a}\label{class_n_n_classifier_afe45825f6dfc06564521d172e2ba5f6a}} 
+\index{NNClassifier@{NNClassifier}!classify@{classify}}
+\index{classify@{classify}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{classify()}{classify()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int NNClassifier\+::classify (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Classifies the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} with the given components using the nearest neighbor classification algorithm. 
+
+This function is a essentially a shell for int classify(\+Data\+Vector  v) to find the label from x, y, z values 
+\begin{DoxyParams}{Parameters}
+{\em x} & The x component of the \mbox{\hyperlink{class_data_vector}{Data\+Vector}}. \\
+\hline
+{\em y} & The y component of the \mbox{\hyperlink{class_data_vector}{Data\+Vector}}. \\
+\hline
+{\em z} & The z component of the \mbox{\hyperlink{class_data_vector}{Data\+Vector}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The label assigned to the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} by the classifier. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_classifier_a8f3baa9dfd3601a58780c82f7ed31df3}{Classifier}}.
+
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00050}{50}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_a3f3017b7912a793a5f592e26306b1cc4}\label{class_n_n_classifier_a3f3017b7912a793a5f592e26306b1cc4}} 
+\index{NNClassifier@{NNClassifier}!train@{train}}
+\index{train@{train}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{train()}{train()}}
+{\footnotesize\ttfamily void NNClassifier\+::train (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Trains the classifier using the data in the given file. 
+
+This function read the training file given and stores all the vectors into the Know\+Data\+Vector vector \begin{DoxyWarning}{Warning}
+file format must be in (x,y,z,label) format 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name of the file containing the training data. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_classifier_a41bfc667929967e5dccac1cddcf0056b}{Classifier}}.
+
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/wangy/\+One\+Drive/school/winter2023/\+PROG71020/project/\+Project1/\mbox{\hyperlink{_n_n_classifier_8h}{NNClassifier.\+h}}\item 
+C\+:/\+Users/wangy/\+One\+Drive/school/winter2023/\+PROG71020/project/\+Project1/\mbox{\hyperlink{_n_n_classifier_8cpp}{NNClassifier.\+cpp}}\end{DoxyCompactItemize}

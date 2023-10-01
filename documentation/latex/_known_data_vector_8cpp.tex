@@ -1,0 +1,78 @@
+\hypertarget{_known_data_vector_8cpp}{}\doxysection{C\+:/\+Users/wangy/\+One\+Drive/school/winter2023/\+PROG71020/project/\+Project1/\+Known\+Data\+Vector.cpp File Reference}
+\label{_known_data_vector_8cpp}\index{C:/Users/wangy/OneDrive/school/winter2023/PROG71020/project/Project1/KnownDataVector.cpp@{C:/Users/wangy/OneDrive/school/winter2023/PROG71020/project/Project1/KnownDataVector.cpp}}
+{\ttfamily \#include \char`\"{}Known\+Data\+Vector.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ifstream \& \mbox{\hyperlink{_known_data_vector_8cpp_aab050b47409a90195e23566724fa8740}{operator$>$$>$}} (ifstream \&fin, \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} \&v)
+\begin{DoxyCompactList}\small\item\em Overloads the input stream operator to read a \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} object from a file. \end{DoxyCompactList}\item 
+ofstream \& \mbox{\hyperlink{_known_data_vector_8cpp_aed058b0ce81659462bdf327e7949b99b}{operator$<$$<$}} (ofstream \&fout, \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} \&v)
+\begin{DoxyCompactList}\small\item\em Overloads the output stream operator to write a \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} object to a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_known_data_vector_8cpp_aed058b0ce81659462bdf327e7949b99b}\label{_known_data_vector_8cpp_aed058b0ce81659462bdf327e7949b99b}} 
+\index{KnownDataVector.cpp@{KnownDataVector.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!KnownDataVector.cpp@{KnownDataVector.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily ofstream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ofstream \&}]{fout,  }\item[{\mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Overloads the output stream operator to write a \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} object to a file. 
+
+Uses the 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{friend}\ }
+
+\end{DoxyCode}
+ keyword to get access to members
+
+
+\begin{DoxyParams}{Parameters}
+{\em fout} & The output file stream to write to. \\
+\hline
+{\em v} & The \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} object to write. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output file stream. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_known_data_vector_8cpp_source_l00032}{32}} of file \mbox{\hyperlink{_known_data_vector_8cpp_source}{Known\+Data\+Vector.\+cpp}}.
+
+\mbox{\Hypertarget{_known_data_vector_8cpp_aab050b47409a90195e23566724fa8740}\label{_known_data_vector_8cpp_aab050b47409a90195e23566724fa8740}} 
+\index{KnownDataVector.cpp@{KnownDataVector.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!KnownDataVector.cpp@{KnownDataVector.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily ifstream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{ifstream \&}]{fin,  }\item[{\mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Overloads the input stream operator to read a \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} object from a file. 
+
+Uses the 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{friend}\ }
+
+\end{DoxyCode}
+ keyword to get access to members
+
+
+\begin{DoxyParams}{Parameters}
+{\em fin} & The input file stream to read from. \\
+\hline
+{\em v} & The \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} object to read into. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The input file stream. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_known_data_vector_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{_known_data_vector_8cpp_source}{Known\+Data\+Vector.\+cpp}}.
+

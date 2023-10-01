@@ -1,0 +1,133 @@
+\hypertarget{class_classifier}{}\doxysection{Classifier Class Reference}
+\label{class_classifier}\index{Classifier@{Classifier}}
+
+
+An abstract base class for classifiers that can classify \mbox{\hyperlink{class_data_vector}{Data\+Vector}} objects.  
+
+
+
+
+{\ttfamily \#include $<$Classifier.\+h$>$}
+
+Inheritance diagram for Classifier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_classifier}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_classifier_a41bfc667929967e5dccac1cddcf0056b}{train}} (const string \&file\+Name)=0
+\begin{DoxyCompactList}\small\item\em Trains the classifier using the data in the given file. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_classifier_a8f3baa9dfd3601a58780c82f7ed31df3}{classify}} (double x, double y, double z)=0
+\begin{DoxyCompactList}\small\item\em Classifies the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} with the given components using the classifier. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_classifier_afce93e5ec1f4262ec10b929a35bb37dc}{classify}} (const string \&i\+File\+Name, const string \&o\+File\+Name)=0
+\begin{DoxyCompactList}\small\item\em Classifies the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} objects in the input file using the classifier and writes the results to the output file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} $>$ \mbox{\hyperlink{class_classifier_ace628cdd46a14bd273864d0015de88fb}{data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An abstract base class for classifiers that can classify \mbox{\hyperlink{class_data_vector}{Data\+Vector}} objects. 
+
+A \mbox{\hyperlink{class_classifier}{Classifier}} can train from a set of Known\+Data\+Vectors to classify any orientation from its \mbox{\hyperlink{class_data_vector}{Data\+Vector}} 
+
+Definition at line \mbox{\hyperlink{_classifier_8h_source_l00022}{22}} of file \mbox{\hyperlink{_classifier_8h_source}{Classifier.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_classifier_afce93e5ec1f4262ec10b929a35bb37dc}\label{class_classifier_afce93e5ec1f4262ec10b929a35bb37dc}} 
+\index{Classifier@{Classifier}!classify@{classify}}
+\index{classify@{classify}!Classifier@{Classifier}}
+\doxysubsubsection{\texorpdfstring{classify()}{classify()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Classifier\+::classify (\begin{DoxyParamCaption}\item[{const string \&}]{i\+File\+Name,  }\item[{const string \&}]{o\+File\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Classifies the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} objects in the input file using the classifier and writes the results to the output file. 
+
+This is is a virtual function
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+File\+Name} & The name of the input file. \\
+\hline
+{\em o\+File\+Name} & The name of the output file. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_dummy_classifier_af509d6c344aa8aff67cf27442b71f74d}{Dummy\+Classifier}}, \mbox{\hyperlink{class_k_n_n_classifier_af7e5e8e7b50ab22178aad7e9bad78aa1}{KNNClassifier}}, and \mbox{\hyperlink{class_n_n_classifier_a3460020cef2297fd853300fb71323640}{NNClassifier}}.
+
+\mbox{\Hypertarget{class_classifier_a8f3baa9dfd3601a58780c82f7ed31df3}\label{class_classifier_a8f3baa9dfd3601a58780c82f7ed31df3}} 
+\index{Classifier@{Classifier}!classify@{classify}}
+\index{classify@{classify}!Classifier@{Classifier}}
+\doxysubsubsection{\texorpdfstring{classify()}{classify()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual int Classifier\+::classify (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Classifies the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} with the given components using the classifier. 
+
+This is is a virtual function
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x component of the \mbox{\hyperlink{class_data_vector}{Data\+Vector}}. \\
+\hline
+{\em y} & The y component of the \mbox{\hyperlink{class_data_vector}{Data\+Vector}}. \\
+\hline
+{\em z} & The z component of the \mbox{\hyperlink{class_data_vector}{Data\+Vector}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The label assigned to the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} by the classifier. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_dummy_classifier_ab910c9eb5a4925070b1f33dff432e077}{Dummy\+Classifier}}, \mbox{\hyperlink{class_k_n_n_classifier_a071b8e89957b531a33cafd5df4df3cea}{KNNClassifier}}, and \mbox{\hyperlink{class_n_n_classifier_afe45825f6dfc06564521d172e2ba5f6a}{NNClassifier}}.
+
+\mbox{\Hypertarget{class_classifier_a41bfc667929967e5dccac1cddcf0056b}\label{class_classifier_a41bfc667929967e5dccac1cddcf0056b}} 
+\index{Classifier@{Classifier}!train@{train}}
+\index{train@{train}!Classifier@{Classifier}}
+\doxysubsubsection{\texorpdfstring{train()}{train()}}
+{\footnotesize\ttfamily virtual void Classifier\+::train (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Trains the classifier using the data in the given file. 
+
+This is is a virtual function
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name of the file containing the training data. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_dummy_classifier_a30e46adccbd71fc48f1f3eafdf1f9a09}{Dummy\+Classifier}}, \mbox{\hyperlink{class_k_n_n_classifier_a9636ecd04e3f7ceb7d42dd2b25ea1890}{KNNClassifier}}, and \mbox{\hyperlink{class_n_n_classifier_a3f3017b7912a793a5f592e26306b1cc4}{NNClassifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_classifier_ace628cdd46a14bd273864d0015de88fb}\label{class_classifier_ace628cdd46a14bd273864d0015de88fb}} 
+\index{Classifier@{Classifier}!data@{data}}
+\index{data@{data}!Classifier@{Classifier}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}}$>$ Classifier\+::data\hspace{0.3cm}{\ttfamily [protected]}}
+
+A vector of \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} objects to use for classification. 
+
+Definition at line \mbox{\hyperlink{_classifier_8h_source_l00026}{26}} of file \mbox{\hyperlink{_classifier_8h_source}{Classifier.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/wangy/\+One\+Drive/school/winter2023/\+PROG71020/project/\+Project1/\mbox{\hyperlink{_classifier_8h}{Classifier.\+h}}\end{DoxyCompactItemize}

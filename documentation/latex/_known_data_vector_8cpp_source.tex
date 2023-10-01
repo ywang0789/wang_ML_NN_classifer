@@ -1,0 +1,43 @@
+\hypertarget{_known_data_vector_8cpp_source}{}\doxysection{Known\+Data\+Vector.\+cpp}
+\label{_known_data_vector_8cpp_source}\index{C:/Users/wangy/OneDrive/school/winter2023/PROG71020/project/Project1/KnownDataVector.cpp@{C:/Users/wangy/OneDrive/school/winter2023/PROG71020/project/Project1/KnownDataVector.cpp}}
+\mbox{\hyperlink{_known_data_vector_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_known_data_vector_8h}{KnownDataVector.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00005}\mbox{\hyperlink{class_known_data_vector_a8b6835b701d5d750d6f2ae95e8786ace}{00005}}\ \mbox{\hyperlink{class_known_data_vector_a8b6835b701d5d750d6f2ae95e8786ace}{KnownDataVector::KnownDataVector}}()}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00006}00006\ \{}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00007}00007\ \ \ \ \ this-\/>label\ =\ \mbox{\hyperlink{_known_data_vector_8h_a3f849cac9b3f375bc3b585bc860e058d}{ERROR\_LABEL}};}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00008}00008\ \}}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00010}\mbox{\hyperlink{class_known_data_vector_adf7523ced06a83b5b866bb0045ff7b92}{00010}}\ \mbox{\hyperlink{class_known_data_vector_a8b6835b701d5d750d6f2ae95e8786ace}{KnownDataVector::KnownDataVector}}(\textcolor{keywordtype}{double}\ x,\ \textcolor{keywordtype}{double}\ y,\ \textcolor{keywordtype}{double}\ z,\ \textcolor{keywordtype}{int}\ label)\ :\ \mbox{\hyperlink{class_data_vector}{DataVector}}(x,\ y,\ z),\ label(label)\ \{\}}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00013}\mbox{\hyperlink{class_known_data_vector_af69808ce4319a4dcc45089ded08531b8}{00013}}\ \mbox{\hyperlink{class_known_data_vector_a8b6835b701d5d750d6f2ae95e8786ace}{KnownDataVector::KnownDataVector}}(\mbox{\hyperlink{class_data_vector}{DataVector}}\ v,\ \textcolor{keywordtype}{int}\ label):\ label(label)}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00014}00014\ \{}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00015}00015\ \ \ \ \ this-\/>\mbox{\hyperlink{class_data_vector_a629416acf3ee54fad5ef70075c06342a}{x}}\ =\ v.\mbox{\hyperlink{class_data_vector_a7a46c9a0a2bfdb3346a3b16117f957d2}{getX}}();}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00016}00016\ \ \ \ \ this-\/>\mbox{\hyperlink{class_data_vector_a2b5aecae28518eb78cf451fd2d2b1ab4}{y}}\ =\ v.\mbox{\hyperlink{class_data_vector_a76f7fc1647e8b490e277bc9ba5caa650}{getY}}();}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00017}00017\ \ \ \ \ this-\/>\mbox{\hyperlink{class_data_vector_a196f1c987e198c9e582e7404935fcc84}{z}}\ =\ v.\mbox{\hyperlink{class_data_vector_a6c33936fbfdb08315ef138ce82dec33a}{getZ}}();}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00018}00018\ \}}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00020}\mbox{\hyperlink{class_known_data_vector_aad677621f951f37dad0f27f2afb43125}{00020}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_known_data_vector_aad677621f951f37dad0f27f2afb43125}{KnownDataVector::getLabel}}()}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00021}00021\ \{}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00022}00022\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>label;}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00023}00023\ \}}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00025}\mbox{\hyperlink{class_known_data_vector_aab050b47409a90195e23566724fa8740}{00025}}\ ifstream\&\ \mbox{\hyperlink{_known_data_vector_8cpp_aab050b47409a90195e23566724fa8740}{operator\ >>}}(ifstream\&\ fin,\ \mbox{\hyperlink{class_known_data_vector}{KnownDataVector}}\&\ v)}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00026}00026\ \{}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00027}00027\ \ \ \ \ \textcolor{keywordtype}{char}\ comma;}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00028}00028\ \ \ \ \ fin\ >>\ v.\mbox{\hyperlink{class_data_vector_a629416acf3ee54fad5ef70075c06342a}{x}}\ >>\ comma\ >>\ v.\mbox{\hyperlink{class_data_vector_a2b5aecae28518eb78cf451fd2d2b1ab4}{y}}\ >>\ comma\ >>\ v.\mbox{\hyperlink{class_data_vector_a196f1c987e198c9e582e7404935fcc84}{z}}>>\ comma\ >>\ v.label;}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00029}00029\ \ \ \ \ \textcolor{keywordflow}{return}\ fin;}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00030}00030\ \}}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00032}\mbox{\hyperlink{class_known_data_vector_aed058b0ce81659462bdf327e7949b99b}{00032}}\ ofstream\&\ \mbox{\hyperlink{_known_data_vector_8cpp_aed058b0ce81659462bdf327e7949b99b}{operator\ <<}}(ofstream\&\ fout,\ \mbox{\hyperlink{class_known_data_vector}{KnownDataVector}}\&\ v)}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00033}00033\ \{}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00034}00034\ \ \ \ \ \textcolor{keywordtype}{char}\ comma\ =\ \textcolor{charliteral}{','};}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00035}00035\ \ \ \ \ fout\ <<\ v.\mbox{\hyperlink{class_data_vector_a629416acf3ee54fad5ef70075c06342a}{x}}\ <<\ comma\ <<\ v.\mbox{\hyperlink{class_data_vector_a2b5aecae28518eb78cf451fd2d2b1ab4}{y}}\ <<\ comma\ <<\ v.\mbox{\hyperlink{class_data_vector_a196f1c987e198c9e582e7404935fcc84}{z}}\ <<\ comma\ <<\ v.label;}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00036}00036\ \ \ \ \ \textcolor{keywordflow}{return}\ fout;}
+\DoxyCodeLine{\Hypertarget{_known_data_vector_8cpp_source_l00037}00037\ \}}
+
+\end{DoxyCode}

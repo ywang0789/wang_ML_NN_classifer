@@ -1,0 +1,147 @@
+\hypertarget{_known_data_vector_8h}{}\doxysection{C\+:/\+Users/wangy/\+One\+Drive/school/winter2023/\+PROG71020/project/\+Project1/\+Known\+Data\+Vector.h File Reference}
+\label{_known_data_vector_8h}\index{C:/Users/wangy/OneDrive/school/winter2023/PROG71020/project/Project1/KnownDataVector.h@{C:/Users/wangy/OneDrive/school/winter2023/PROG71020/project/Project1/KnownDataVector.h}}
+
+
+This file contains the definition of the \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} class.  
+
+
+{\ttfamily \#include \char`\"{}Data\+Vector.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}}
+\begin{DoxyCompactList}\small\item\em A class that represents a vector in 3D space with a known label. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_known_data_vector_8h_a3f849cac9b3f375bc3b585bc860e058d}{ERROR\+\_\+\+LABEL}}~0
+\begin{DoxyCompactList}\small\item\em The default label value for a \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} object when an error occurs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ifstream \& \mbox{\hyperlink{_known_data_vector_8h_aab050b47409a90195e23566724fa8740}{operator$>$$>$}} (ifstream \&fin, \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} \&v)
+\begin{DoxyCompactList}\small\item\em Overloads the input stream operator to read a \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} object from a file. \end{DoxyCompactList}\item 
+ofstream \& \mbox{\hyperlink{_known_data_vector_8h_aed058b0ce81659462bdf327e7949b99b}{operator$<$$<$}} (ofstream \&fout, \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} \&v)
+\begin{DoxyCompactList}\small\item\em Overloads the output stream operator to write a \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} object to a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the definition of the \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} class. 
+
+A \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} represents a \mbox{\hyperlink{class_data_vector}{Data\+Vector}} with an additional label to indicate the correct phone orientation \begin{DoxyAuthor}{Author}
+Yao Wang 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14 April 2023 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{_known_data_vector_8h_source}{Known\+Data\+Vector.\+h}}.
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_known_data_vector_8h_a3f849cac9b3f375bc3b585bc860e058d}\label{_known_data_vector_8h_a3f849cac9b3f375bc3b585bc860e058d}} 
+\index{KnownDataVector.h@{KnownDataVector.h}!ERROR\_LABEL@{ERROR\_LABEL}}
+\index{ERROR\_LABEL@{ERROR\_LABEL}!KnownDataVector.h@{KnownDataVector.h}}
+\doxysubsubsection{\texorpdfstring{ERROR\_LABEL}{ERROR\_LABEL}}
+{\footnotesize\ttfamily \#define ERROR\+\_\+\+LABEL~0}
+
+
+
+The default label value for a \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} object when an error occurs. 
+
+This label value is used when a \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} object cannot be initialized correctly due to an error. 
+
+Definition at line \mbox{\hyperlink{_known_data_vector_8h_source_l00018}{18}} of file \mbox{\hyperlink{_known_data_vector_8h_source}{Known\+Data\+Vector.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_known_data_vector_8h_aed058b0ce81659462bdf327e7949b99b}\label{_known_data_vector_8h_aed058b0ce81659462bdf327e7949b99b}} 
+\index{KnownDataVector.h@{KnownDataVector.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!KnownDataVector.h@{KnownDataVector.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily ofstream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ofstream \&}]{fout,  }\item[{\mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Overloads the output stream operator to write a \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} object to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fout} & The output file stream to write to. \\
+\hline
+{\em v} & The \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} object to write. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output file stream.
+\end{DoxyReturn}
+
+
+Uses the 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{friend}\ }
+
+\end{DoxyCode}
+ keyword to get access to members
+
+
+\begin{DoxyParams}{Parameters}
+{\em fout} & The output file stream to write to. \\
+\hline
+{\em v} & The \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} object to write. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output file stream. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_known_data_vector_8cpp_source_l00089}{89}} of file \mbox{\hyperlink{_known_data_vector_8cpp_source}{Known\+Data\+Vector.\+cpp}}.
+
+\mbox{\Hypertarget{_known_data_vector_8h_aab050b47409a90195e23566724fa8740}\label{_known_data_vector_8h_aab050b47409a90195e23566724fa8740}} 
+\index{KnownDataVector.h@{KnownDataVector.h}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!KnownDataVector.h@{KnownDataVector.h}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily ifstream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{ifstream \&}]{fin,  }\item[{\mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Overloads the input stream operator to read a \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} object from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fin} & The input file stream to read from. \\
+\hline
+{\em v} & The \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} object to read into. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The input file stream.
+\end{DoxyReturn}
+
+
+Uses the 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{friend}\ }
+
+\end{DoxyCode}
+ keyword to get access to members
+
+
+\begin{DoxyParams}{Parameters}
+{\em fin} & The input file stream to read from. \\
+\hline
+{\em v} & The \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} object to read into. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The input file stream. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_known_data_vector_8cpp_source_l00078}{78}} of file \mbox{\hyperlink{_known_data_vector_8cpp_source}{Known\+Data\+Vector.\+cpp}}.
+

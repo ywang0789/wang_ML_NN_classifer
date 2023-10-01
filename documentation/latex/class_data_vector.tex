@@ -1,0 +1,263 @@
+\hypertarget{class_data_vector}{}\doxysection{Data\+Vector Class Reference}
+\label{class_data_vector}\index{DataVector@{DataVector}}
+
+
+A class that represents a 3D space gravity vector.  
+
+
+
+
+{\ttfamily \#include $<$Data\+Vector.\+h$>$}
+
+Inheritance diagram for Data\+Vector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_data_vector}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data_vector_a58488167e113c770ef30cf9412a9bd1c}{Data\+Vector}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_data_vector_a86d893839c77a329de9cc4a4272be4fb}{Data\+Vector}} (double \mbox{\hyperlink{class_data_vector_a629416acf3ee54fad5ef70075c06342a}{x}}, double \mbox{\hyperlink{class_data_vector_a2b5aecae28518eb78cf451fd2d2b1ab4}{y}}, double \mbox{\hyperlink{class_data_vector_a196f1c987e198c9e582e7404935fcc84}{z}})
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} class. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_vector_a7a46c9a0a2bfdb3346a3b16117f957d2}{getX}} ()
+\begin{DoxyCompactList}\small\item\em Gets the x component of the vector. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_vector_a76f7fc1647e8b490e277bc9ba5caa650}{getY}} ()
+\begin{DoxyCompactList}\small\item\em Gets the y component of the vector. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_vector_a6c33936fbfdb08315ef138ce82dec33a}{getZ}} ()
+\begin{DoxyCompactList}\small\item\em Gets the z component of the vector. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_vector_a1babc891257d79bd677dc5deffe20879}{calculate\+Distance}} (\mbox{\hyperlink{class_data_vector}{Data\+Vector}} \&v)
+\begin{DoxyCompactList}\small\item\em Calculates the Euclidean distance between the object and another \mbox{\hyperlink{class_data_vector}{Data\+Vector}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_data_vector_a629416acf3ee54fad5ef70075c06342a}{x}}
+\item 
+double \mbox{\hyperlink{class_data_vector_a2b5aecae28518eb78cf451fd2d2b1ab4}{y}}
+\item 
+double \mbox{\hyperlink{class_data_vector_a196f1c987e198c9e582e7404935fcc84}{z}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ifstream \& \mbox{\hyperlink{class_data_vector_a7572aeeb0177d5a78896cf868ac7f10d}{operator$>$$>$}} (ifstream \&fin, \mbox{\hyperlink{class_data_vector}{Data\+Vector}} \&v)
+\begin{DoxyCompactList}\small\item\em Overloads the input stream operator to read a \mbox{\hyperlink{class_data_vector}{Data\+Vector}} object from a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that represents a 3D space gravity vector. 
+
+A \mbox{\hyperlink{class_data_vector}{Data\+Vector}} represents the x, z, and z, coordinates collected from the phone sensors in order to determine the orientation of the phone 
+
+Definition at line \mbox{\hyperlink{_data_vector_8h_source_l00021}{21}} of file \mbox{\hyperlink{_data_vector_8h_source}{Data\+Vector.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_data_vector_a58488167e113c770ef30cf9412a9bd1c}\label{class_data_vector_a58488167e113c770ef30cf9412a9bd1c}} 
+\index{DataVector@{DataVector}!DataVector@{DataVector}}
+\index{DataVector@{DataVector}!DataVector@{DataVector}}
+\doxysubsubsection{\texorpdfstring{DataVector()}{DataVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Data\+Vector\+::\+Data\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} class. 
+
+This constructor sets all member values to NULL 
+
+Definition at line \mbox{\hyperlink{_data_vector_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{_data_vector_8cpp_source}{Data\+Vector.\+cpp}}.
+
+\mbox{\Hypertarget{class_data_vector_a86d893839c77a329de9cc4a4272be4fb}\label{class_data_vector_a86d893839c77a329de9cc4a4272be4fb}} 
+\index{DataVector@{DataVector}!DataVector@{DataVector}}
+\index{DataVector@{DataVector}!DataVector@{DataVector}}
+\doxysubsubsection{\texorpdfstring{DataVector()}{DataVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Data\+Vector\+::\+Data\+Vector (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} class. 
+
+This constructor sets member values to the respective arguements passed
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x component of the vector. \\
+\hline
+{\em y} & The y component of the vector. \\
+\hline
+{\em z} & The z component of the vector. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_data_vector_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{_data_vector_8cpp_source}{Data\+Vector.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_data_vector_a1babc891257d79bd677dc5deffe20879}\label{class_data_vector_a1babc891257d79bd677dc5deffe20879}} 
+\index{DataVector@{DataVector}!calculateDistance@{calculateDistance}}
+\index{calculateDistance@{calculateDistance}!DataVector@{DataVector}}
+\doxysubsubsection{\texorpdfstring{calculateDistance()}{calculateDistance()}}
+{\footnotesize\ttfamily double Data\+Vector\+::calculate\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data_vector}{Data\+Vector}} \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Calculates the Euclidean distance between the object and another \mbox{\hyperlink{class_data_vector}{Data\+Vector}} object. 
+
+Uses the formula d = sqrt(dx$^\wedge$2 + dy$^\wedge$2 + dz$^\wedge$2);
+
+\begin{DoxySeeAlso}{See also}
+\href{https://en.wikipedia.org/wiki/Euclidean_distance}{\texttt{ https\+://en.\+wikipedia.\+org/wiki/\+Euclidean\+\_\+distance}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The \mbox{\hyperlink{class_data_vector}{Data\+Vector}} object to calculate the distance to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Euclidean distance between this \mbox{\hyperlink{class_data_vector}{Data\+Vector}} object and v. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_data_vector_8cpp_source_l00032}{32}} of file \mbox{\hyperlink{_data_vector_8cpp_source}{Data\+Vector.\+cpp}}.
+
+\mbox{\Hypertarget{class_data_vector_a7a46c9a0a2bfdb3346a3b16117f957d2}\label{class_data_vector_a7a46c9a0a2bfdb3346a3b16117f957d2}} 
+\index{DataVector@{DataVector}!getX@{getX}}
+\index{getX@{getX}!DataVector@{DataVector}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily double Data\+Vector\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the x component of the vector. 
+
+\begin{DoxyReturn}{Returns}
+The x component of the vector. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_data_vector_8cpp_source_l00015}{15}} of file \mbox{\hyperlink{_data_vector_8cpp_source}{Data\+Vector.\+cpp}}.
+
+\mbox{\Hypertarget{class_data_vector_a76f7fc1647e8b490e277bc9ba5caa650}\label{class_data_vector_a76f7fc1647e8b490e277bc9ba5caa650}} 
+\index{DataVector@{DataVector}!getY@{getY}}
+\index{getY@{getY}!DataVector@{DataVector}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily double Data\+Vector\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the y component of the vector. 
+
+\begin{DoxyReturn}{Returns}
+The y component of the vector. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_data_vector_8cpp_source_l00020}{20}} of file \mbox{\hyperlink{_data_vector_8cpp_source}{Data\+Vector.\+cpp}}.
+
+\mbox{\Hypertarget{class_data_vector_a6c33936fbfdb08315ef138ce82dec33a}\label{class_data_vector_a6c33936fbfdb08315ef138ce82dec33a}} 
+\index{DataVector@{DataVector}!getZ@{getZ}}
+\index{getZ@{getZ}!DataVector@{DataVector}}
+\doxysubsubsection{\texorpdfstring{getZ()}{getZ()}}
+{\footnotesize\ttfamily double Data\+Vector\+::getZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the z component of the vector. 
+
+\begin{DoxyReturn}{Returns}
+The z component of the vector. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_data_vector_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{_data_vector_8cpp_source}{Data\+Vector.\+cpp}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_data_vector_a7572aeeb0177d5a78896cf868ac7f10d}\label{class_data_vector_a7572aeeb0177d5a78896cf868ac7f10d}} 
+\index{DataVector@{DataVector}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!DataVector@{DataVector}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily ifstream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{ifstream \&}]{fin,  }\item[{\mbox{\hyperlink{class_data_vector}{Data\+Vector}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overloads the input stream operator to read a \mbox{\hyperlink{class_data_vector}{Data\+Vector}} object from a file. 
+
+Uses the 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{friend}\ }
+
+\end{DoxyCode}
+ keyword to get access to members
+
+
+\begin{DoxyParams}{Parameters}
+{\em fin} & The input file stream to read from. \\
+\hline
+{\em v} & The \mbox{\hyperlink{class_data_vector}{Data\+Vector}} object to read into. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The input file stream.
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em fin} & The input file stream to read from. \\
+\hline
+{\em v} & The \mbox{\hyperlink{class_data_vector}{Data\+Vector}} object to read into. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The input file stream. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_data_vector_8cpp_source_l00041}{41}} of file \mbox{\hyperlink{_data_vector_8cpp_source}{Data\+Vector.\+cpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_data_vector_a629416acf3ee54fad5ef70075c06342a}\label{class_data_vector_a629416acf3ee54fad5ef70075c06342a}} 
+\index{DataVector@{DataVector}!x@{x}}
+\index{x@{x}!DataVector@{DataVector}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily double Data\+Vector\+::x\hspace{0.3cm}{\ttfamily [protected]}}
+
+The x component of the vector. 
+
+Definition at line \mbox{\hyperlink{_data_vector_8h_source_l00025}{25}} of file \mbox{\hyperlink{_data_vector_8h_source}{Data\+Vector.\+h}}.
+
+\mbox{\Hypertarget{class_data_vector_a2b5aecae28518eb78cf451fd2d2b1ab4}\label{class_data_vector_a2b5aecae28518eb78cf451fd2d2b1ab4}} 
+\index{DataVector@{DataVector}!y@{y}}
+\index{y@{y}!DataVector@{DataVector}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily double Data\+Vector\+::y\hspace{0.3cm}{\ttfamily [protected]}}
+
+The y component of the vector. 
+
+Definition at line \mbox{\hyperlink{_data_vector_8h_source_l00026}{26}} of file \mbox{\hyperlink{_data_vector_8h_source}{Data\+Vector.\+h}}.
+
+\mbox{\Hypertarget{class_data_vector_a196f1c987e198c9e582e7404935fcc84}\label{class_data_vector_a196f1c987e198c9e582e7404935fcc84}} 
+\index{DataVector@{DataVector}!z@{z}}
+\index{z@{z}!DataVector@{DataVector}}
+\doxysubsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily double Data\+Vector\+::z\hspace{0.3cm}{\ttfamily [protected]}}
+
+The z component of the vector. 
+
+Definition at line \mbox{\hyperlink{_data_vector_8h_source_l00027}{27}} of file \mbox{\hyperlink{_data_vector_8h_source}{Data\+Vector.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/wangy/\+One\+Drive/school/winter2023/\+PROG71020/project/\+Project1/\mbox{\hyperlink{_data_vector_8h}{Data\+Vector.\+h}}\item 
+C\+:/\+Users/wangy/\+One\+Drive/school/winter2023/\+PROG71020/project/\+Project1/\mbox{\hyperlink{_data_vector_8cpp}{Data\+Vector.\+cpp}}\end{DoxyCompactItemize}

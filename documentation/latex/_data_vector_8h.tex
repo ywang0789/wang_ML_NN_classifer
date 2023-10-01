@@ -1,0 +1,81 @@
+\hypertarget{_data_vector_8h}{}\doxysection{C\+:/\+Users/wangy/\+One\+Drive/school/winter2023/\+PROG71020/project/\+Project1/\+Data\+Vector.h File Reference}
+\label{_data_vector_8h}\index{C:/Users/wangy/OneDrive/school/winter2023/PROG71020/project/Project1/DataVector.h@{C:/Users/wangy/OneDrive/school/winter2023/PROG71020/project/Project1/DataVector.h}}
+
+
+This file contains the definition of the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} class.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_data_vector}{Data\+Vector}}
+\begin{DoxyCompactList}\small\item\em A class that represents a 3D space gravity vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ifstream \& \mbox{\hyperlink{_data_vector_8h_a7572aeeb0177d5a78896cf868ac7f10d}{operator$>$$>$}} (ifstream \&fin, \mbox{\hyperlink{class_data_vector}{Data\+Vector}} \&v)
+\begin{DoxyCompactList}\small\item\em Overloads the input stream operator to read a \mbox{\hyperlink{class_data_vector}{Data\+Vector}} object from a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the definition of the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} class. 
+
+A \mbox{\hyperlink{class_data_vector}{Data\+Vector}} represents the x, z, and z, coordinates collected from the phone sensors in order to determine the orientation of the phone \begin{DoxyAuthor}{Author}
+Yao Wang 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14 April 2023 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{_data_vector_8h_source}{Data\+Vector.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_data_vector_8h_a7572aeeb0177d5a78896cf868ac7f10d}\label{_data_vector_8h_a7572aeeb0177d5a78896cf868ac7f10d}} 
+\index{DataVector.h@{DataVector.h}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!DataVector.h@{DataVector.h}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily ifstream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{ifstream \&}]{fin,  }\item[{\mbox{\hyperlink{class_data_vector}{Data\+Vector}} \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Overloads the input stream operator to read a \mbox{\hyperlink{class_data_vector}{Data\+Vector}} object from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fin} & The input file stream to read from. \\
+\hline
+{\em v} & The \mbox{\hyperlink{class_data_vector}{Data\+Vector}} object to read into. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The input file stream.
+\end{DoxyReturn}
+
+
+Uses the 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{friend}\ }
+
+\end{DoxyCode}
+ keyword to get access to members
+
+
+\begin{DoxyParams}{Parameters}
+{\em fin} & The input file stream to read from. \\
+\hline
+{\em v} & The \mbox{\hyperlink{class_data_vector}{Data\+Vector}} object to read into. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The input file stream. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_data_vector_8cpp_source_l00091}{91}} of file \mbox{\hyperlink{_data_vector_8cpp_source}{Data\+Vector.\+cpp}}.
+

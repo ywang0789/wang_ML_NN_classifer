@@ -1,0 +1,148 @@
+\hypertarget{class_k_n_n_classifier}{}\doxysection{KNNClassifier Class Reference}
+\label{class_k_n_n_classifier}\index{KNNClassifier@{KNNClassifier}}
+
+
+A class that implements the K-\/\+NN classification algorithm.  
+
+
+
+
+{\ttfamily \#include $<$KNNClassifier.\+h$>$}
+
+Inheritance diagram for KNNClassifier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_k_n_n_classifier}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_k_n_n_classifier_a9636ecd04e3f7ceb7d42dd2b25ea1890}{train}} (const string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Trains the classifier using the data in the given file. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_k_n_n_classifier_a071b8e89957b531a33cafd5df4df3cea}{classify}} (double x, double y, double z)
+\begin{DoxyCompactList}\small\item\em Classifies the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} with the given components using the classifier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_k_n_n_classifier_af7e5e8e7b50ab22178aad7e9bad78aa1}{classify}} (const string \&i\+File\+Name, const string \&o\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Classifies the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} objects in the input file using the classifier and writes the results to the output file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_classifier_a41bfc667929967e5dccac1cddcf0056b}{train}} (const string \&file\+Name)=0
+\begin{DoxyCompactList}\small\item\em Trains the classifier using the data in the given file. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_classifier_a8f3baa9dfd3601a58780c82f7ed31df3}{classify}} (double x, double y, double z)=0
+\begin{DoxyCompactList}\small\item\em Classifies the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} with the given components using the classifier. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_classifier_afce93e5ec1f4262ec10b929a35bb37dc}{classify}} (const string \&i\+File\+Name, const string \&o\+File\+Name)=0
+\begin{DoxyCompactList}\small\item\em Classifies the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} objects in the input file using the classifier and writes the results to the output file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_classifier}{Classifier}}}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_known_data_vector}{Known\+Data\+Vector}} $>$ \mbox{\hyperlink{class_classifier_ace628cdd46a14bd273864d0015de88fb}{data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that implements the K-\/\+NN classification algorithm. 
+
+\begin{DoxyWarning}{Warning}
+This class has not yet been fully implemented 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{_k_n_n_classifier_8h_source_l00023}{23}} of file \mbox{\hyperlink{_k_n_n_classifier_8h_source}{KNNClassifier.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_k_n_n_classifier_af7e5e8e7b50ab22178aad7e9bad78aa1}\label{class_k_n_n_classifier_af7e5e8e7b50ab22178aad7e9bad78aa1}} 
+\index{KNNClassifier@{KNNClassifier}!classify@{classify}}
+\index{classify@{classify}!KNNClassifier@{KNNClassifier}}
+\doxysubsubsection{\texorpdfstring{classify()}{classify()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void KNNClassifier\+::classify (\begin{DoxyParamCaption}\item[{const string \&}]{i\+File\+Name,  }\item[{const string \&}]{o\+File\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Classifies the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} objects in the input file using the classifier and writes the results to the output file. 
+
+\begin{DoxyWarning}{Warning}
+This function has not yet been implemented
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em i\+File\+Name} & The name of the input file. \\
+\hline
+{\em o\+File\+Name} & The name of the output file. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_classifier_afce93e5ec1f4262ec10b929a35bb37dc}{Classifier}}.
+
+
+
+Definition at line \mbox{\hyperlink{_k_n_n_classifier_8cpp_source_l00018}{18}} of file \mbox{\hyperlink{_k_n_n_classifier_8cpp_source}{KNNClassifier.\+cpp}}.
+
+\mbox{\Hypertarget{class_k_n_n_classifier_a071b8e89957b531a33cafd5df4df3cea}\label{class_k_n_n_classifier_a071b8e89957b531a33cafd5df4df3cea}} 
+\index{KNNClassifier@{KNNClassifier}!classify@{classify}}
+\index{classify@{classify}!KNNClassifier@{KNNClassifier}}
+\doxysubsubsection{\texorpdfstring{classify()}{classify()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int KNNClassifier\+::classify (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Classifies the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} with the given components using the classifier. 
+
+\begin{DoxyWarning}{Warning}
+This function has not yet been implemented
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x component of the \mbox{\hyperlink{class_data_vector}{Data\+Vector}}. \\
+\hline
+{\em y} & The y component of the \mbox{\hyperlink{class_data_vector}{Data\+Vector}}. \\
+\hline
+{\em z} & The z component of the \mbox{\hyperlink{class_data_vector}{Data\+Vector}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The label assigned to the \mbox{\hyperlink{class_data_vector}{Data\+Vector}} by the classifier. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_classifier_a8f3baa9dfd3601a58780c82f7ed31df3}{Classifier}}.
+
+
+
+Definition at line \mbox{\hyperlink{_k_n_n_classifier_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{_k_n_n_classifier_8cpp_source}{KNNClassifier.\+cpp}}.
+
+\mbox{\Hypertarget{class_k_n_n_classifier_a9636ecd04e3f7ceb7d42dd2b25ea1890}\label{class_k_n_n_classifier_a9636ecd04e3f7ceb7d42dd2b25ea1890}} 
+\index{KNNClassifier@{KNNClassifier}!train@{train}}
+\index{train@{train}!KNNClassifier@{KNNClassifier}}
+\doxysubsubsection{\texorpdfstring{train()}{train()}}
+{\footnotesize\ttfamily void KNNClassifier\+::train (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Trains the classifier using the data in the given file. 
+
+\begin{DoxyWarning}{Warning}
+This function has not yet been implemented
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name of the file containing the training data. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_classifier_a41bfc667929967e5dccac1cddcf0056b}{Classifier}}.
+
+
+
+Definition at line \mbox{\hyperlink{_k_n_n_classifier_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{_k_n_n_classifier_8cpp_source}{KNNClassifier.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/wangy/\+One\+Drive/school/winter2023/\+PROG71020/project/\+Project1/\mbox{\hyperlink{_k_n_n_classifier_8h}{KNNClassifier.\+h}}\item 
+C\+:/\+Users/wangy/\+One\+Drive/school/winter2023/\+PROG71020/project/\+Project1/\mbox{\hyperlink{_k_n_n_classifier_8cpp}{KNNClassifier.\+cpp}}\end{DoxyCompactItemize}

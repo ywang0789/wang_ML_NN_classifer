@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['calculatedistance_0',['calculateDistance',['../class_data_vector.html#a1babc891257d79bd677dc5deffe20879',1,'DataVector']]],
+  ['classifier_1',['Classifier',['../class_classifier.html',1,'']]],
+  ['classifier_2eh_2',['Classifier.h',['../_classifier_8h.html',1,'']]],
+  ['classify_3',['classify',['../class_classifier.html#a8f3baa9dfd3601a58780c82f7ed31df3',1,'Classifier::classify(double x, double y, double z)=0'],['../class_classifier.html#afce93e5ec1f4262ec10b929a35bb37dc',1,'Classifier::classify(const string &amp;iFileName, const string &amp;oFileName)=0'],['../class_dummy_classifier.html#ab910c9eb5a4925070b1f33dff432e077',1,'DummyClassifier::classify(double x, double y, double z)'],['../class_dummy_classifier.html#af509d6c344aa8aff67cf27442b71f74d',1,'DummyClassifier::classify(const string &amp;iFileName, const string &amp;oFileName)'],['../class_k_n_n_classifier.html#a071b8e89957b531a33cafd5df4df3cea',1,'KNNClassifier::classify(double x, double y, double z)'],['../class_k_n_n_classifier.html#af7e5e8e7b50ab22178aad7e9bad78aa1',1,'KNNClassifier::classify(const string &amp;iFileName, const string &amp;oFileName)'],['../class_n_n_classifier.html#afe45825f6dfc06564521d172e2ba5f6a',1,'NNClassifier::classify(double x, double y, double z)'],['../class_n_n_classifier.html#a3460020cef2297fd853300fb71323640',1,'NNClassifier::classify(const string &amp;iFileName, const string &amp;oFileName)']]]
+];
